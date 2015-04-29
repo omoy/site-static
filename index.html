@@ -1,1 +1,81 @@
-I love Jane
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://gridgum.com/theme-preview/akhwat-business-multipurpose/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Responsive Theme Preview | Gridgum</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"><style>body, #theme-preview * { margin: 0px; padding: 0px; overflow: hidden;}
+		#theme-preview aside { padding: 0px 20px; background: #5c524c; border-bottom: 2px solid #44372f; padding-bottom: 5px; }
+        #theme-preview iframe { width: 100%; }
+		#theme-preview .theme-name {font-size: 20px; color: #ebeaef; margin: 15px 0 0 20px; display: block;}
+		#theme-preview .theme-close {color: #fff; font-size:13px;}
+		#theme-preview .theme-close:hover {color: #ee607a;}
+		#theme-preview .btn.btn-lg {padding: 6px 10px; margin: 10px 16px 0 0; border-radius: 20px; background-color: #f79700;}
+		#theme-preview .btn.btn-lg:hover {background-color: #f37548}
+		#theme-preview .logoar {padding: 5px 2px; text-align: center;}
+	 	#theme-preview .logoar img {max-width: 100%;}
+		.theme-devices {margin-top: 15px!important; float:left;}
+		.theme-devices .device {display: block; float:left; margin-left: 5px; width: 47px; height: 33px; cursor: pointer;}
+		.theme-devices .device.desktop { background: url(http://gridgum.wpengine.netdna-cdn.com/wp-content/themes/gridgum-child/images/desktop-view.png) center center no-repeat;}
+		.theme-devices .device.tablet {margin-left: 10px!important; background: url(http://gridgum.wpengine.netdna-cdn.com/wp-content/themes/gridgum-child/images/tablet-view.png) center center no-repeat;}
+		.theme-devices .device.mobile { background: url(http://gridgum.wpengine.netdna-cdn.com/wp-content/themes/gridgum-child/images/mobile-view.png) center center no-repeat;}
+        #screen {
+            position: relative;
+        }
+		
+		@media (max-width: 420px) {
+		 .col-md-4.text-right .theme-close {clear: both; float: left; padding-top: 10px; width:100%;}
+		 #theme-preview .theme-name {margin-left: 0;}
+		}
+		@media (max-width: 992px) {
+            .col-md-4.text-right {text-align: left; margin-left: 2px!important; padding-bottom: 10px!important}	
+			
+			.theme-devices {display: none;}
+		}</style> <script src="./Responsive Theme Preview   Gridgum_files/jquery.min.js"></script><script src="./Responsive Theme Preview   Gridgum_files/bootstrap.min.js"></script><script type="text/javascript" src="./Responsive Theme Preview   Gridgum_files/autoptimize_d41d8cd98f00b204e9800998ecf8427e.js"></script></head><body role="document"><div id="theme-preview"> <aside><div class="row"><div class="col-xs-4 col-sm-3 col-md-1 logoar"><a href="http://gridgum.com/" target="_blank" title="Gridgum Responsive Themes"><img src="./Responsive Theme Preview   Gridgum_files/gridgum-logo.png"></a></div><div class="col-xs-12 col-sm-9 col-md-5"><span class="theme-name">AKHWAT – Business Multipurpose</span></div><div class="col-md-2"> <span class="theme-devices"> <a class="device desktop" data-screen="desktop"></a> <a class="device tablet" data-screen="tablet"></a> <a class="device mobile" data-screen="smartphone"></a> </span></div><div class="col-xs-12 col-md-4 text-right"><a href="http://gridgum.com/themes/akhwat-business-multipurpose/" class="btn btn-lg btn-warning">Buy this Theme Now</a> <a href="http://gridgum.com/theme-preview/akhwat-business-multipurpose/#" id="close-iframe" data-url="http://demo.develpixel.com/akhwat/index.html" class="theme-close">X Remove frame</a></div> <script>jQuery( document ).ready( function() {
+                            
+                            jQuery( '#close-iframe' ).click( function() {
+                                
+                                window.location.href = jQuery( this ).attr( 'data-url' );
+                                
+                            } );
+                            
+                            jQuery( '.device' ).click( function() {
+                                
+                                var size = $( this ).data( 'screen' );
+                                var new_w = '';
+                                var margin_l = '';
+                                var left = '';
+                                
+                                if( size == "desktop" ) {
+                                    new_w = "100%";
+                                    left = "0%";
+                                    margin_l = "0px";
+                                } else if( size == "tablet" ) {
+                                    new_w = "960";
+                                    margin_l = "-480px";
+                                    left = "50%";
+                                } else {
+                                    new_w = "420";
+                                    margin_l = "-210px";
+                                    left = "50%";
+                                }
+                                
+                                jQuery( '#screen' ).css( 'width', new_w );
+                                jQuery( '#screen' ).css( 'margin-left', margin_l );
+                                jQuery( '#screen' ).css( 'left', left );
+                                
+                                return false;
+                                
+                            } );
+                        } ); 
+                        
+                        var calcHeight = function() {
+                            var headerDimensions = $('#theme-preview aside').height();
+                            $('#theme-preview iframe').height($(window).height() - headerDimensions);
+                        }
+
+                        $(document).ready(function() {
+                            calcHeight();
+                        });
+
+                        $(window).resize(function() {
+                            calcHeight();
+                        }).load(function() {
+                            calcHeight();
+                        });</script> </div> </aside> <iframe id="screen" scrollbar="no" frameborder="0" noresize="noresize" src="./Responsive Theme Preview   Gridgum_files/blog.html" style="height: 668px;"></iframe></div></body></html>
