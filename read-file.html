@@ -1,0 +1,37 @@
+<html>
+<input type="file" id="file-input" />
+<h3>Contents of the file:</h3>
+<pre id="file-content"></pre>
+
+<script>
+function readSingleFile(e) {
+  var file = e.target.files[0];
+  if (!file) {
+    return;
+  }
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var contents = e.target.result;
+    
+    var json_obj = JSON.parse(contents);
+    var actual_data = JSON.parse(json_obj.log.entries[80].response.content.text);
+    console.log( json_obj.log.entries );
+    //console.log( actual_data.object.response.docs ); 
+    //for(var i = 0, i < 402, i++){content.mimeType = "text/json; charset=utf-8";}
+
+    displayContents(contents);
+  };
+  reader.readAsText(file);
+}
+
+function displayContents(contents) {
+  var element = document.getElementById('file-content');
+  element.innerHTML = contents;
+}
+
+document.getElementById('file-input')
+  .addEventListener('change', readSingleFile, false);
+
+</script>
+
+</html>
