@@ -1,7 +1,7 @@
 <html>
 <input type="file" id="file-input" />
 <h3>Contents of the file:</h3>
-<pre id="file-content"></pre>
+<div pre='' id="file-content"></div>
 
 <script>
 function readSingleFile(e) {
@@ -14,19 +14,50 @@ function readSingleFile(e) {
     var contents = e.target.result;
     
     var json_obj = JSON.parse(contents);
-    var actual_data = JSON.parse(json_obj.log.entries[80].response.content.text);
-    console.log( json_obj.log.entries );
+    var biz_data = [];
+    var final_data = []
+    var count = 0;
+    //var actual_data = JSON.parse(json_obj.log.entries[80].response.content.text);
+    //console.log( json_obj.log.entries );
+     
     //console.log( actual_data.object.response.docs ); 
-    //for(var i = 0, i < 402, i++){content.mimeType = "text/json; charset=utf-8";}
+        
+        for(var i = 0; i < json_obj.log.entries.length; i++){ 
+          if (json_obj.log.entries[i].response.content.mimeType == "text/json; charset=utf-8")
+           {
+            //count++;
+            biz_data.push(JSON.parse(json_obj.log.entries[i].response.content.text).object.response.docs);
+            //console.log( 'item:', i);
+           }
+        }
 
-    displayContents(contents);
+        //biz_data = JSON.stringify(biz_data);
+        for(var i=0; i<biz_data.length; i++){
+          
+          for(var j=0; j<biz_data[i].length; j++){
+            count++;
+            final_data.push(biz_data[i][j]);
+            //console.log('biz:', count, final_data[count-1] );
+          }
+        }
+        
+        final_data = JSON.parse(JSON.stringify(final_data));
+        console.log(biz_data.length, json_obj.log.entries.length, '\nthe data is',final_data[0]);
+
+
+
+    displayContents(final_data);
   };
   reader.readAsText(file);
 }
 
 function displayContents(contents) {
   var element = document.getElementById('file-content');
-  element.innerHTML = contents;
+  for(var i=0; i<contents.length; i++){
+  element.innerHTML = contents[i].businessname;
+  //element.append(contents[i].businessname);
+  console.log(contents.length);
+  }
 }
 
 document.getElementById('file-input')
