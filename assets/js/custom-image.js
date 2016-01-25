@@ -36,7 +36,7 @@
 
             $(function () {
                 var $header = $("#headLine");
-                var header = ['LOADING...', 'TESTING...', 'COMING SOON...']; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
+                var header = ['LOADING...', 'TESTING...',]; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
 
                 var position = -1;
 
