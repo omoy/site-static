@@ -1,1 +1,333 @@
-I love Yeshua
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] - Professional Portfolio</title>
+  <link href="./me_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./me_files/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333333;
+      background-color: #F5F5F5;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Roboto', sans-serif;
+      color: #003366;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFA500;
+    }
+
+    a:hover {
+      color: #00CCCC;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      padding: 20px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #FFFFFF;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header nav a {
+      color: #FFFFFF;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    header nav a:hover {
+      color: #FFA500;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 51, 102, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin: 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero .btn {
+      background-color: #FFA500;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #F5F5F5;
+      padding: 50px 0;
+    }
+
+    .about .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .about img {
+      width: 200px;
+      border-radius: 50%;
+      margin-right: 40px;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Experience Section */
+    .experience {
+      background-color: #FFFFFF;
+      padding: 50px 0;
+    }
+
+    .experience h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .experience .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .experience .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #00CCCC;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .experience .card {
+      background-color: #F5F5F5;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      width: 45%;
+      position: relative;
+    }
+
+    .experience .card.left {
+      left: 0;
+    }
+
+    .experience .card.right {
+      left: 55%;
+    }
+
+    .experience .card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .experience .card p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Skills Section */
+    .skills {
+      background-color: #F5F5F5;
+      padding: 50px 0;
+    }
+
+    .skills h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .skills .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skills .skill {
+      text-align: center;
+    }
+
+    .skills .skill i {
+      font-size: 48px;
+      color: #00CCCC;
+    }
+
+    .skills .skill h3 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333333;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Omoyele Shodeinde</h1>
+      <nav>
+        <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#about">About</a>
+        <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#experience">Experience</a>
+        <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#skills">Skills</a>
+        <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Engineer | Project Manager | Renewable Energy Advocate</h1>
+      <p>Driving innovation in energy and technology through leadership, collaboration, and a passion for sustainable solutions.</p>
+      <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/me.html#about" class="btn">Explore My Journey</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <img src="https://via.placeholder.com/200" alt="[Your Name]">
+      <div>
+        <h2>About Me</h2>
+        <p>I’m [Your Name], a seasoned professional with over a decade of experience spanning engineering, oil and gas drilling, and renewable energy. My career has taken me from rig sites in Nigeria to exploring cutting-edge technologies, and I thrive in multidisciplinary, multiethnic environments where innovation meets execution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="card left">
+          <h3>Baker Hughes – Rig-Site Project Manager and Coach</h3>
+          <p>Dec 2014 – Apr 2021</p>
+          <p>Led multidisciplinary teams in drilling and logging operations, ensuring safety, efficiency, and client satisfaction.</p>
+        </div>
+        <div class="card right">
+          <h3>Baker Hughes – Field Services Engineer</h3>
+          <p>Dec 2011 – Dec 2014</p>
+          <p>Supervised Logging-While-Drilling (LWD) operations, troubleshooting technical issues and ensuring optimal performance.</p>
+        </div>
+        <div class="card left">
+          <h3>PwC – Associate</h3>
+          <p>Oct 2009 – Dec 2011</p>
+          <p>Delivered audit and assurance services for oil and gas clients, ensuring compliance with GAAP and Sarbanes-Oxley (SoX) standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="skill">
+          <i class="fas fa-cogs"></i>
+          <h3>Logging-While-Drilling</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-users"></i>
+          <h3>Team Leadership</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-chart-line"></i>
+          <h3>Agile Project Management</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-leaf"></i>
+          <h3>Renewable Energy</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© [Year] [Your Name]. All rights reserved.</p>
+      <p>Connect with me: <a href="file:///C:/Users/MY%20COMPUTER/Documents/Books/[LinkedIn%20URL]">LinkedIn</a></p>
+    </div>
+  </footer>
+
+</body></html>
